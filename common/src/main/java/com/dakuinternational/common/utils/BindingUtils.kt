@@ -2,6 +2,7 @@ package com.dakuinternational.common.utils
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dakuinternational.common.R
 
@@ -11,3 +12,4 @@ fun srcUri(view: ImageView, uri: String){
         .load(uri)
         .into(view)
 }
+

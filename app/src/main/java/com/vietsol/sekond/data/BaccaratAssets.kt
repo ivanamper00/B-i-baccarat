@@ -3,6 +3,12 @@ package com.vietsol.sekond.data
 import com.dakuinternational.common.DataContent
 
 object BaccaratAssets {
+    val navigation = listOf(
+        "Navigation 1",
+        "Navigation 2",
+        "Navigation 3",
+        "Navigation 4"
+    )
     var home = listOf(
         DataContent(
             title ="Baccarat Banque",

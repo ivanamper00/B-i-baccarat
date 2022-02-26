@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -12,12 +13,13 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.dakuinternational.common.DataContent
 import com.dakuinternational.common.base.BaseActivity
+import com.dakuinternational.common.delegates.AdapterOnItemClickListener
 import com.dakuinternational.common.ui.ActivityViewModel
 import com.vietsol.sekond.R
 import com.vietsol.sekond.databinding.ActivityMainBinding
 import com.vietsol.sekond.presentation.NavigationDelegate
 
-class MainActivity : BaseActivity(), NavigationDelegate {
+class MainActivity : BaseActivity(), NavigationDelegate, AdapterOnItemClickListener<Int> {
 
     private lateinit var binding: ActivityMainBinding
     private val viewModel by viewModels<ActivityViewModel>()
@@ -31,6 +33,8 @@ class MainActivity : BaseActivity(), NavigationDelegate {
         val inflater = LayoutInflater.from(this)
         binding = ActivityMainBinding.inflate(inflater, null, false)
         setContentView(binding.root)
+
+        binding.clickListener = this
 
         viewModel.activityEvent.observe(this){
             when(it){
@@ -55,5 +59,9 @@ class MainActivity : BaseActivity(), NavigationDelegate {
 
     companion object{
         fun createIntent(context: Context) = Intent(context, MainActivity::class.java)
+    }
+
+    override fun onItemClick(data: Int) {
+        Toast.makeText(this, "$data", Toast.LENGTH_SHORT).show()
     }
 }

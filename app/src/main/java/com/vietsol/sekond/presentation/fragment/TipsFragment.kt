@@ -9,16 +9,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.dakuinternational.common.base.BaseFragment
 import com.dakuinternational.common.binding.viewBinding
 import com.vietsol.sekond.R
-import com.vietsol.sekond.databinding.FragmentRulesBinding
-import com.vietsol.sekond.presentation.adapter.RulesAdapter
+import com.vietsol.sekond.databinding.FragmentTipsBinding
+import com.vietsol.sekond.presentation.adapter.TipsAdapter
 
-class RulesFragment : BaseFragment(R.layout.fragment_rules) {
+class TipsFragment : BaseFragment(R.layout.fragment_tips) {
 
-    val binding by viewBinding(FragmentRulesBinding::bind)
+    val binding by viewBinding(FragmentTipsBinding::bind)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.rulesRecycler.adapter = RulesAdapter()
-        binding.rulesRecycler.layoutManager = LinearLayoutManager(requireContext())
+        binding.tipsRecycler.adapter = TipsAdapter()
+        binding.tipsRecycler.layoutManager = LinearLayoutManager(requireContext())
     }
+
 }

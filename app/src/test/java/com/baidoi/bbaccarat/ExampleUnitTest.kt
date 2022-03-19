@@ -1,4 +1,4 @@
-package com.vietsol.sekond
+package com.baidoi.bbaccarat
 
 import org.junit.Test
 

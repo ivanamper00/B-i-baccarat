@@ -1,19 +1,16 @@
-package com.vietsol.sekond.presentation.fragment
+package com.baidoi.bbaccarat.presentation.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dakuinternational.common.DataContent
 import com.dakuinternational.common.base.BaseFragment
 import com.dakuinternational.common.binding.viewBinding
 import com.dakuinternational.common.delegates.AdapterOnItemClickListener
-import com.vietsol.sekond.R
-import com.vietsol.sekond.databinding.FragmentVariationBinding
-import com.vietsol.sekond.presentation.NavigationDelegate
-import com.vietsol.sekond.presentation.adapter.VariationAdapter
+import com.baidoi.bbaccarat.R
+import com.baidoi.bbaccarat.databinding.FragmentVariationBinding
+import com.baidoi.bbaccarat.presentation.NavigationDelegate
+import com.baidoi.bbaccarat.presentation.adapter.VariationAdapter
 
 class VariationFragment : BaseFragment(R.layout.fragment_variation), AdapterOnItemClickListener<DataContent> {
 

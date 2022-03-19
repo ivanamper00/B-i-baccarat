@@ -1,4 +1,4 @@
-package com.vietsol.sekond.data
+package com.baidoi.bbaccarat.data
 
 import com.dakuinternational.common.DataContent
 
@@ -6,8 +6,7 @@ object BaccaratAssets {
     val navigation = listOf(
         "Home",
         "Rules",
-        "Tips and Strategy",
-        "Variations"
+        "Tips and Strategy"
     )
     var home = listOf(
         DataContent(

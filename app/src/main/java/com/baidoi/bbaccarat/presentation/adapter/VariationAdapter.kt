@@ -1,4 +1,4 @@
-package com.vietsol.sekond.presentation.adapter
+package com.baidoi.bbaccarat.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -10,9 +10,8 @@ import com.dakuinternational.common.delegates.AdapterOnItemClickListener
 import com.dakuinternational.common.delegates.OnImageLoaded
 import com.github.ybq.android.spinkit.sprite.Sprite
 import com.github.ybq.android.spinkit.style.CubeGrid
-import com.github.ybq.android.spinkit.style.DoubleBounce
-import com.vietsol.sekond.data.BaccaratAssets
-import com.vietsol.sekond.databinding.ItemVariationBinding
+import com.baidoi.bbaccarat.data.BaccaratAssets
+import com.baidoi.bbaccarat.databinding.ItemVariationBinding
 
 
 class VariationAdapter(var adapterOnClick: AdapterOnItemClickListener<DataContent>): RecyclerView.Adapter<VariationAdapter.ViewHolder>() {

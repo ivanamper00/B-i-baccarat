@@ -1,11 +1,11 @@
-package com.vietsol.sekond.presentation.adapter
+package com.baidoi.bbaccarat.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dakuinternational.common.delegates.AdapterOnItemClickListener
-import com.vietsol.sekond.data.BaccaratAssets
-import com.vietsol.sekond.databinding.ItemNavigationBinding
+import com.baidoi.bbaccarat.data.BaccaratAssets
+import com.baidoi.bbaccarat.databinding.ItemNavigationBinding
 
 class NavigationAdapter(var onClick: AdapterOnItemClickListener<Int>) : RecyclerView.Adapter<NavigationAdapter.ViewHolder>() {
 

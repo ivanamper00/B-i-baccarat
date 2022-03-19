@@ -1,4 +1,4 @@
-package com.vietsol.sekond.presentation
+package com.baidoi.bbaccarat.presentation
 
 import com.dakuinternational.common.DataContent
 

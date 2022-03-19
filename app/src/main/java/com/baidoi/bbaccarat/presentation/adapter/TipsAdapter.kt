@@ -1,11 +1,11 @@
-package com.vietsol.sekond.presentation.adapter
+package com.baidoi.bbaccarat.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.dakuinternational.common.DataContent
-import com.vietsol.sekond.data.BaccaratAssets
-import com.vietsol.sekond.databinding.ItemTipsBinding
+import com.baidoi.bbaccarat.data.BaccaratAssets
+import com.baidoi.bbaccarat.databinding.ItemTipsBinding
 
 class TipsAdapter: RecyclerView.Adapter<TipsAdapter.ViewHolder>() {
 

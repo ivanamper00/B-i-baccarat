@@ -1,34 +1,28 @@
-package com.vietsol.sekond.presentation.activity
+package com.baidoi.bbaccarat.presentation.activity
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import androidx.navigation.NavController
-import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.dakuinternational.common.DataContent
 import com.dakuinternational.common.base.BaseActivity
 import com.dakuinternational.common.delegates.AdapterOnItemClickListener
 import com.dakuinternational.common.ui.ActivityViewModel
 import com.google.gson.Gson
-import com.vietsol.sekond.R
-import com.vietsol.sekond.databinding.ActivityMainBinding
-import com.vietsol.sekond.presentation.NavigationDelegate
-import com.vietsol.sekond.presentation.fragment.HomeFragmentDirections
-import com.vietsol.sekond.presentation.fragment.VariationFragmentDirections
+import com.baidoi.bbaccarat.presentation.NavigationDelegate
+import com.baidoi.bbaccarat.presentation.fragment.HomeFragmentDirections
+import com.baidoi.bbaccarat.presentation.fragment.VariationFragmentDirections
+import com.baidoi.bbaccarat.R
+import com.baidoi.bbaccarat.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity(), NavigationDelegate, AdapterOnItemClickListener<Int> {
 
     private lateinit var binding: ActivityMainBinding
-    private val viewModel by viewModels<ActivityViewModel>()
     private val navHostFragment by lazy {
         supportFragmentManager.findFragmentById(R.id.navigation_host) as NavHostFragment
     }

@@ -1,10 +1,7 @@
-package com.vietsol.sekond.presentation.fragment
+package com.baidoi.bbaccarat.presentation.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ProgressBar
 import androidx.navigation.fragment.navArgs
 import com.dakuinternational.common.DataContent
@@ -14,8 +11,8 @@ import com.dakuinternational.common.delegates.OnImageLoaded
 import com.github.ybq.android.spinkit.sprite.Sprite
 import com.github.ybq.android.spinkit.style.CubeGrid
 import com.google.gson.Gson
-import com.vietsol.sekond.R
-import com.vietsol.sekond.databinding.FragmentContentBinding
+import com.baidoi.bbaccarat.R
+import com.baidoi.bbaccarat.databinding.FragmentContentBinding
 
 
 class ContentFragment : BaseFragment(R.layout.fragment_content), OnImageLoaded {

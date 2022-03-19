@@ -9,7 +9,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.vietsol.sekond"
+        applicationId "com.baidoi.bbaccarat"
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -59,10 +59,7 @@ dependencies {
     implementation "android.arch.lifecycle:viewmodel:1.1.1"
 
     implementation(project(":common"))
-    implementation(project(":yqcbee"))
-
-    //Youtube Player
-    implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5'
+    implementation 'com.github.ivanamper00:TalonNiDaku:2.1.1'
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.12.0'

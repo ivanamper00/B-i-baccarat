@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.vietsol.sekond.presentation.fragment.HomeFragment"
+        android:name="com.baidoi.bbaccarat.presentation.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,17 +19,17 @@
     </fragment>
     <fragment
         android:id="@+id/rulesFragment"
-        android:name="com.vietsol.sekond.presentation.fragment.RulesFragment"
+        android:name="com.baidoi.bbaccarat.presentation.fragment.RulesFragment"
         android:label="fragment_rules"
         tools:layout="@layout/fragment_rules" />
     <fragment
         android:id="@+id/tipsFragment"
-        android:name="com.vietsol.sekond.presentation.fragment.TipsFragment"
+        android:name="com.baidoi.bbaccarat.presentation.fragment.TipsFragment"
         android:label="fragment_tips"
         tools:layout="@layout/fragment_tips" />
     <fragment
         android:id="@+id/variationFragment"
-        android:name="com.vietsol.sekond.presentation.fragment.VariationFragment"
+        android:name="com.baidoi.bbaccarat.presentation.fragment.VariationFragment"
         android:label="VariationFragment"
         tools:layout="@layout/fragment_variation" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/contentFragment"
-        android:name="com.vietsol.sekond.presentation.fragment.ContentFragment"
+        android:name="com.baidoi.bbaccarat.presentation.fragment.ContentFragment"
         android:label="ContentFragment"
         tools:layout="@layout/fragment_content">
         <argument

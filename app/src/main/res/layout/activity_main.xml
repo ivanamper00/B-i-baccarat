@@ -11,7 +11,7 @@
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="@drawable/ic_background"
         tools:context=".presentation.activity.MainActivity">
 
         <androidx.drawerlayout.widget.DrawerLayout
@@ -24,18 +24,22 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <com.google.android.material.appbar.AppBarLayout
                     android:id="@+id/appBarLayout"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
+                    android:background="@color/gold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
+
                     <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         app:contentInsetStart="0dp">
+
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
@@ -55,15 +59,16 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="0dp"
-                                app:layout_constraintBottom_toBottomOf="@+id/viewDrawer"
-                                android:layout_marginLeft="16dp"
+                                android:layout_marginStart="16dp"
+                                android:gravity="center"
                                 android:text="@string/app_name"
                                 android:textColor="@color/white"
                                 android:textSize="14sp"
                                 android:textStyle="bold"
-                                android:gravity="center"
+                                app:layout_constraintBottom_toBottomOf="@+id/viewDrawer"
                                 app:layout_constraintStart_toEndOf="@+id/viewDrawer"
-                                app:layout_constraintTop_toTopOf="@+id/viewDrawer"/>
+                                app:layout_constraintTop_toTopOf="@+id/viewDrawer"
+                                app:layout_constraintVertical_bias="0.0" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.appcompat.widget.Toolbar>
@@ -87,8 +92,10 @@
                 android:id="@+id/main_nav_view"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:fitsSystemWindows="false"
-                android:layout_gravity="start">
+                android:layout_gravity="start"
+                android:background="@color/black80"
+                android:fitsSystemWindows="false">
+
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -98,6 +105,7 @@
                         android:layout_width="0dp"
                         android:layout_height="0dp"
                         android:elevation="10dp"
+                        android:background="@drawable/ic_navbar"
                         app:layout_constraintDimensionRatio="H, 517: 220"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -109,6 +117,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:navListOnClick="@{clickListener}"
+                        tools:listitem="@layout/item_navigation"
+                        tools:itemCount="3"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -121,16 +131,16 @@
                         android:gravity="center"
                         android:padding="8dp"
                         android:text="Exit"
+                        android:textColor="@color/white"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"/>
+                        app:layout_constraintStart_toStartOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.navigation.NavigationView>
         </androidx.drawerlayout.widget.DrawerLayout>
-
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
